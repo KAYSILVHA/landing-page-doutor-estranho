@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  color:#fff;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+header{
+  background-color:rgba(46, 44, 44, 0.808);
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+}
+.logo{
+  width: 150px;
+}
+.logo img{
+  width: 100%;
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav img{
+  width: 20px;
+  filter: invert(100%);
+}
+header nav ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 20px;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  background-position:right ;
+  background-repeat:no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page{
+  width: 100%;
+  height: 68vh;
+  background-color: #130F17;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 60px;
+  background-image: url('./assets/back.jpg');
+  background-position:right;
+  background-repeat: no-repeat;
+}
+
+.marvel-logo{
+  padding: 10px;
+  margin-top: 70px;
+}
+.marvel-logo img{
+  width: 700px;
+  padding: 5px;
+}
+
+.description{
+  text-align: justify;
+  width:700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.description span{
+  font-weight: bold;
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.buttons button{
+  color: #fff;
+  padding: 15px;
+  background-color: rgba(46, 44, 44, 0.808);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.buttons button img{
+  width: 20px;
+  filter: invert(100%);
+}
+.buttons button:hover{
+  background-color: rgba(46, 44, 44, 1);
+  cursor: pointer;
+}
+
+
+.grid{
+  width: 100%;
+  padding:50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.grid h2{
+  font-size: 40px;
+}
+.grid-movies{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 20px;
+  justify-content: center;
+}
+
+.grid-movies .movies{
+  width: 200px;
+  height: 390px;
+  border-radius: 0 0 10px 10px;
+}
+
+.grid-movies .movies .movies-image{
+  width: 100%;
+  height: 80%;
+  background-color: black;
+}
+.grid-movies .movies .movies-image img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  
+}
+
+.grid-movies .movies .movies-description{
+  width: 100%;
+  height: 20%;
+  background-color: #DB202C;
+  border-radius: 0 0 10px 10px; 
+}
